@@ -1,0 +1,2 @@
+2026/04/23 11:00:51 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2026/04/27 21:59:04 [error] 35#35: *273 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "POST /check-page HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "localhost:8000", referrer: "http://localhost:5173/"
