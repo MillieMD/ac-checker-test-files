@@ -1,0 +1,25 @@
+header {
+
+    padding-block: var(--pad-s);
+
+    background: var(--clr-blue-100);
+    color: var(--fc-light);
+
+    text-align: center;
+}
+
+header>nav>ul{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+
+    padding: var(--pad-s);
+    gap: var(--pad-s);
+
+    list-style-type: none;
+}
+
+header>nav>ul>li>a{
+    color: var(--fc-light);
+}

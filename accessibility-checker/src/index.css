@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* 
+Format classes like this:
+    display    
+    position
+    size
+    padding/margin
+    colour
+    border
+    font
+    animation
+*/
+
+/* ROOT */
+
+:root {
+    --pad-xs: 0.5rem;
+    --pad-s: 1rem;
+    --pad-m: 2rem;
+    --pad-l: 4rem;
+
+    --clr-red-400: #B70A01;
+    --clr-red-600: #8E0801;
+
+    --clr-blue-100: #1B4474;
+    --clr-blue-400: #2660A4;
+    --clr-blue-500: #2B6CB6;
+    --clr-blue-600: #2F75C6;
+    --clr-blue-800: #498AD4;
+
+    --clr-yellow-400: #FFBD00;
+
+    --clr-white-700: #F5F5F5;
+    --clr-white-800: #ffffff;
+
+    --clr-grey-400: #757575;
+
+    --clr-bg-400: hsl(0, 0%, 100%);
+
+    --br-s: 0.5rem;
+
+    --b-s: 2px;
+
+    --ff-display: "Roboto Mono";
+    --ff-body: "Roboto Mono";
+
+    --fc-light: var(--clr-white-700);
+    --fc-dark: black;
+
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+}
+
+/* UTILITY */
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+
+    gap: var(--pad-xs)
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--pad-xs)
+}
+
+/* TYPOGRAPHY */
+
+body {
+    font-family: var(--ff-body);
+    color: var(--fc-dark);
+}
+
+h1, h2, h3 {
+    font-family: var(--ff-display);
+}
+
+/* SECTIONS */
+
+section {
+    display: grid;
+    gap: var(--pad-m);
+
+    padding-block: 5rem;
+    padding-inline: 20%;
+
+    align-items: center;
+
+    background-color: var(--clr-white-700);
+}
+
+.card {
+
+    padding-inline: var(--pad-m);
+    padding-block: var(--pad-s);
+
+    background-color: var(--clr-white-800);
+
+    border-radius: var(--br-s);
+
+    box-shadow: 0px 0px 4px -1px grey;
+}

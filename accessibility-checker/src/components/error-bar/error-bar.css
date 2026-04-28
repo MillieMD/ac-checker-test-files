@@ -1,0 +1,11 @@
+.error-bar {
+
+    padding: var(--pad-s);
+
+    background-color: var(--clr-red-600);
+    color: var(--fc-light);
+
+    border-radius: var(--br-s);
+    border: var(--b-s) solid var(--clr-red-400);
+
+}

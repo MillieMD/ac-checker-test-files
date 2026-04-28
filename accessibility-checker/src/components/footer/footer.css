@@ -1,0 +1,8 @@
+footer {
+    padding-block: var(--pad-s);
+
+    background: var(--clr-blue-100);
+    color: var(--fc-light);
+
+    text-align: center;
+}

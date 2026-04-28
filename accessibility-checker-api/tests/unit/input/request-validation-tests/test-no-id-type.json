@@ -1,0 +1,14 @@
+{
+    "url" : "https://www.google.com",
+    "rules": [
+        {
+            "identifier" : {
+                "value" : "img"
+            },
+            "relationship" : "hasAttribute",
+            "parameters" : {
+                "attribute" : "alt"
+            } 
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "url" : "/:1",
+    "rules": [
+        {
+            "identifier" : {
+                "id_type" : "element",
+                "value" : "img"
+            },
+            "relationship" : "hasAttribute",
+            "parameters" : {
+                "attribute" : "alt"
+            } 
+        }
+    ]
+}

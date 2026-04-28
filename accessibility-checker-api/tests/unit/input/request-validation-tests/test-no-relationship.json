@@ -1,0 +1,14 @@
+{
+    "url" : "https://www.google.com",
+    "rules": [
+        {
+            "identifier" : {
+                "id_type" : "element",
+                "value" : "img"
+            },
+            "parameters" : {
+                "attribute" : "alt"
+            } 
+        }
+    ]
+}

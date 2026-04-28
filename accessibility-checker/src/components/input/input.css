@@ -1,0 +1,136 @@
+/* BUTTONS */
+
+.button {
+    display: inline-block;
+
+    padding: var(--pad-s);
+
+    border: none;
+    border-radius: var(--br-s);
+
+    font-family: inherit;
+    font-weight: bold;
+
+    transition: all 200ms ease-in;
+}
+
+.button:hover {
+    text-decoration: solid wavy;
+    background-image: linear-gradient(rgb(0 0 0/40%) 0 0);
+
+    transform: scale(1.1);
+}
+
+.button.button--primary {
+    background-color: var(--clr-blue-100);
+    color: var(--fc-light);
+}
+
+.button.button--secondary {
+    padding: calc(var(--pad-s) - var(--b-s));
+    /* Without looks bigger than button--primary due to border */
+    background: transparent;
+    color: var(--clr-blue-100);
+
+    border: var(--b-s) solid var(--clr-blue-100);
+
+}
+
+.button.button--danger {
+    padding: calc(var(--pad-xs) - var(--b-s));
+
+    background: transparent;
+    color: var(--clr-red-400);
+
+    box-shadow: none;
+}
+
+.button.button--danger:hover {
+    background: transparent;
+
+    box-shadow: none;
+
+    animation: throb 1s infinite;
+}
+
+@keyframes throb {
+    0% {transform: rotate(0deg); transform: scale(1.25)};
+    25% {transform: rotate(2deg)};
+    50% {transform: rotate(0deg); transform: scale(1.25)};
+    75% {transform: rotate(-2deg)};
+    100% {transform: rotate(0deg); transform: scale(1.25)};
+}
+
+/* INPUT */
+
+input, select, option {
+    padding: var(--pad-s);
+
+    border: none;
+    border-radius: var(--br-s);
+
+}
+
+input {
+    font-family: inherit;
+}
+
+/* Text */
+
+input[type="text"] {
+    background-color: white;
+
+    border: dotted var(--b-s) black;
+}
+
+input[type="text"]:focus {
+    background-color: white;
+
+    border: solid var(--b-s) black;
+}
+
+input#url-input {
+    margin: var(--pad-m);
+    
+    width: 50%;
+
+    align-self: center
+}
+
+/* Dropdowns */
+
+select {
+    font-family: inherit;
+    font-weight: bold;
+}
+
+select > option {
+
+    border: none;
+
+    font-family: inherit;
+    font-weight: normal;
+}
+
+.rule__selector--element-id {
+    background-color: var(--clr-yellow-400);
+}
+
+.rule__selector--relationship {
+    background-color: var(--clr-blue-800);
+    color: var(--clr-white-400);
+}
+
+/* RULE */
+
+.rule-container {
+    display:flex;
+    flex-direction: column;
+    gap: var(--pad-xs);
+}
+
+.rule {
+    display: flex;
+    flex-direction: row;
+    gap: var(--pad-xs);
+}

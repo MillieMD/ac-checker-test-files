@@ -1,0 +1,15 @@
+{
+    "url": "https://www.google.co.uk",
+    "rules": [
+        {
+            "identifier": {
+                "value": "value",
+                "type": "invalid type"
+            },
+            "relationship": "hasAttribute",
+            "params": {
+                "attribute": "alt"
+            }
+        }
+    ]
+}

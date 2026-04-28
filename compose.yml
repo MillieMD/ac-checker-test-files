@@ -1,0 +1,31 @@
+name: accessibility-checker-mmd
+
+services:
+  web_server:
+    build: ./nginx/
+    ports:
+      - 8000:80
+
+    volumes:
+      - ./accessibility-checker-api/:/var/www/html/
+
+  php:
+    image: php:8.5-fpm
+    expose:
+      - 9000
+
+    volumes:
+      - ./accessibility-checker-api/:/var/www/html/
+
+  react:
+    build: ./accessibility-checker/
+    ports:
+      - 5173:5173
+
+    develop:
+      watch:
+        - action: sync
+          path: ./accessibility-checker/src/
+          target: /usr/accessibility-checker/src/
+
+    

@@ -1,0 +1,9 @@
+{
+    "url" : "https://www.google.com",
+    "rules" : [
+        {
+            "relationship" : "hasAttribute",
+            "parameters" : {}         
+        }
+    ]
+}

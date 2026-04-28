@@ -1,0 +1,55 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "request",
+    "title": "Request",
+    "description": "A request to evaluate custom rules on a given URL",
+    "type": "object",
+    "properties": {
+        "url": {
+            "type": "string"
+        },
+        "rules": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "identifier": {
+                        "type": "object",
+                        "properties": {
+                            "value": {
+                                "type": "string"
+                            },
+                            "id_type": {
+                                "enum": [
+                                    "element",
+                                    "class",
+                                    "id"
+                                ]
+                            }
+                        },
+                        "required": ["value", "id_type"]
+
+                    },
+                    "relationship": {
+                        "enum": [
+                            "hasChild",
+                            "hasParent",
+                            "hasAttribute",
+                            "hasAncestor",
+                            "hasDescendant"
+                        ]
+                    },
+                    "parameters": {
+                        "type": "object"
+                    }
+                },
+                "required": ["identifier", "relationship"]
+
+            }
+        }
+    },
+    "required": [
+        "url",
+        "rules"
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "name": "millie/ac-api",
+    "version" : "1.0.0",
+    "type" : "project",
+    "description": "API backend for Accessibility Checker React App",
+    "authors": [
+        {
+            "name" : "MillieMD",
+            "role" : "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\" : "app/",
+            "AccessibilityChecker\\": "src/",
+            "Testing\\" : "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^13.0"
+    },
+    "require": {
+        "slim/slim": "^4.15",
+        "slim/psr7": "^1.8",
+        "php-di/slim-bridge": "^3.4",
+        "vlucas/phpdotenv": "^5.6",
+        "swaggest/json-schema": "^0.12.43"
+    },
+    "scripts": {
+        "test" : "./vendor/bin/phpunit --colors=always --display-all-issues --configuration phpunit.xml --",
+        "test-all" : "./vendor/bin/phpunit --colors=always --display-all-issues"
+    }
+}

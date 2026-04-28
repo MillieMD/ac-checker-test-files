@@ -1,0 +1,32 @@
+.collapsable-panel {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    background-color: var(--clr-white-800);
+
+    border-radius: var(--br-s);
+
+    box-shadow: 0px 0px 4px -1px grey;
+}
+
+.collapsable-panel >.collapsable-panel__button {
+    
+    padding: var(--pad-s);
+    
+    background-color: var(--clr-white-800);
+
+    border: none;
+    border-radius: var(--br-s);
+
+    text-align: left;
+
+}
+
+.collapsable-panel > .collapsable-panel__content {
+
+    padding: var(--pad-m);
+
+    border-top: 1px solid grey;
+
+    transition: ease 300ms all;
+}
