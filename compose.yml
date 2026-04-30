@@ -10,12 +10,9 @@ services:
       - ./accessibility-checker-api/:/var/www/html/
 
   php:
-    image: php:8.5-fpm
+    build: ./accessibility-checker-api/
     expose:
       - 9000
-
-    volumes:
-      - ./accessibility-checker-api/:/var/www/html/
 
   react:
     build: ./accessibility-checker/

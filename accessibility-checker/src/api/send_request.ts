@@ -1,6 +1,6 @@
 import { APIRequestData } from "./api.js";
 
-const API_URL : string = import.meta.env.VITE_API_HOST + "/check-page";
+const API_URL : string = "http://localhost:8000/check-page";
 
 async function send_request(request : APIRequestData) {
 
