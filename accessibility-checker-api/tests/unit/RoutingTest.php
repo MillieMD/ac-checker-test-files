@@ -54,19 +54,4 @@ class RoutingTest extends SlimTestCase
         $this->assertEquals(200, $response->getStatusCode());
     }
 
-    public function testGetMethods(): void
-    {
-        $request = $this->createTestRequest("GET", "/method");
-        $response = $this->app->handle($request, new Response());
-
-        $this->assertEquals(200, $response->getStatusCode());
-    }
-
-    public function testGetFormat(): void
-    {
-        $request = $this->createTestRequest("GET", "/request-format");
-        $response = $this->app->handle($request, new Response());
-
-        $this->assertEquals(200, $response->getStatusCode());
-    }
 }

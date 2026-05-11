@@ -34,9 +34,7 @@
                         "enum": [
                             "hasChild",
                             "hasParent",
-                            "hasAttribute",
-                            "hasAncestor",
-                            "hasDescendant"
+                            "hasAttribute"
                         ]
                     },
                     "parameters": {

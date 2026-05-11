@@ -17,7 +17,7 @@ class LabelInserter {
         $dom->body->appendChild($style_block);
     }
 
-    public function insertLabel(HTMLDocument $dom, string $node_path, string $message){
+    public function insertLabel(HTMLDocument $dom, string $node_path){
         $xpath = new XPath($dom);
         $node = $xpath->query($node_path)[0];
 
